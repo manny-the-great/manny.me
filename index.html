@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manny - Interactive Portfolio</title>
+    <link rel="shortcut icon" href="./p-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- Animated cursor follower -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Particle background -->
+    <div class="particles-container" id="particles"></div>
+
+    <nav>
+        <div class="nav">
+            <ul>
+                <li><a href="#" data-tooltip="Home"><i class='bx bx-home-alt'></i></a></li>
+                <li><a href="https://x.com/manny_xszn" data-tooltip="Twitter" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                <li><a href="#portfolio-section" data-tooltip="Projects"><i class='bx bxs-bolt'></i></a></li>
+                <span class="github">
+                    <li><a href="https://github.com/manny-codeszn" data-tooltip="GitHub" target="_blank"><i class='bx bxl-github'></i></a></li>
+                </span>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="me">
+        <div class="me-content">
+            <div class="profile-wrapper" data-tilt>
+                <img src="./img/pfp.png" alt="manny" class="profile-image">
+                <div class="profile-ring"></div>
+            </div>
+            
+            <h1 class="title">
+                Hello, I'm 
+                <span class="styled-name typing-effect" data-typing-text="Manny Johnson."></span>
+                <span class="cursor-blink">|</span>
+            </h1>
+            
+            <p class="fade-in-text">
+                I specialize in creating visually appealing and user-friendly websites that bring ideas to life. 
+                I am skilled in modern web technologies and continuously strive to learn and grow in the ever-evolving 
+                field of web development.
+            </p>
+            
+            <!-- Skill stats with animated counters -->
+            <div class="stats-container">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="50">0</span>
+                    <span class="stat-label">Projects</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="2">0</span>
+                    <span class="stat-label">Years Exp</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="100">0</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="me-buttons">
+            <button class="connect ripple-effect">
+                <a href="#contact">
+                    Let's Connect! <i class='bx bx-sync bx-spin-hover'></i>
+                </a>
+            </button>
+            <button class="active ripple-effect">
+                <a href="#portfolio-section">
+                    Active to build projects <i class='bx bx-code-alt'></i>
+                </a>
+            </button>
+        </div>
+    </section>
+
+    <section class="portfolio-section" id="portfolio-section">
+        <h2 class="section-title">Featured Projects</h2>
+        
+        <div class="portfolio-grid">
+            <div class="portfolio-card" data-project="1">
+                <div class="project-overlay">
+                    <div class="project-info">
+                        <h3>ArtReel Studio</h3>
+                        <p>Creative portfolio showcase</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                        </div>
+                        <a href="#" class="view-project">View Project <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+                <img src="./img/artreel.png" alt="Portfolio Image 1">
+            </div>
+            
+            <div class="portfolio-card" data-project="2">
+                <div class="project-overlay">
+                    <div class="project-info">
+                        <h3>Camaro Showcase</h3>
+                        <p>Automotive landing page</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>SASS</span>
+                        </div>
+                        <a href="#" class="view-project">View Project <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+                <img src="./img/camaro.png" alt="Portfolio Image 2">
+            </div>
+            
+            <div class="portfolio-card" data-project="3">
+                <div class="project-overlay">
+                    <div class="project-info">
+                        <h3>Wally Design</h3>
+                        <p>Modern web application</p>
+                        <div class="project-tags">
+                            <span>Vue</span>
+                            <span>Tailwind</span>
+                        </div>
+                        <a href="#" class="view-project">View Project <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+                <img src="./img/wally.png" alt="Portfolio Image 3">
+            </div>
+            
+            <div class="portfolio-card" data-project="4">
+                <div class="project-overlay">
+                    <div class="project-info">
+                        <h3>Netflix Clone</h3>
+                        <p>Streaming platform UI</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Firebase</span>
+                        </div>
+                        <a href="#" class="view-project">View Project <i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                </div>
+                <img src="./img/netflix.png" alt="Portfolio Image 4">
+            </div>
+        </div>
+    </section>
+
+    <div class="technologies">
+        <h1 class="technologies-title">
+            <span class="gradient-text">Technologies I Use</span>
+        </h1>
+        
+        <div class="carousel">
+            <article class="card tech-card" data-tech="HTML">
+                <img src="./img/html.png" alt="HTML" class="card-img">
+                <span class="tech-name">HTML5</span>
+            </article>
+            <article class="card tech-card" data-tech="CSS">
+                <img src="./img/css.png" alt="CSS" class="card-img">
+                <span class="tech-name">CSS3</span>
+            </article>
+            <article class="card tech-card" data-tech="JavaScript">
+                <img src="./img/js.png" alt="JavaScript" class="card-img">
+                <span class="tech-name">JavaScript</span>
+            </article>
+            <article class="card tech-card" data-tech="Bootstrap">
+                <img src="./img/bs.png" alt="Bootstrap" class="card-img">
+                <span class="tech-name">Bootstrap</span>
+            </article>
+            <article class="card tech-card" data-tech="SASS">
+                <img src="./img/sass.png" alt="SASS" class="card-img">
+                <span class="tech-name">SASS</span>
+            </article>
+            <article class="card tech-card" data-tech="Figma">
+                <img src="./img/figma.png" alt="Figma" class="card-img">
+                <span class="tech-name">Figma</span>
+            </article>
+            <article class="card tech-card" data-tech="Canva">
+                <img src="./img/canva.png" alt="Canva" class="card-img">
+                <span class="tech-name">Canva</span>
+            </article>
+            <article class="card tech-card" data-tech="Tailwind">
+                <img src="./img/tw.png" alt="Tailwind" class="card-img">
+                <span class="tech-name">Tailwind</span>
+            </article>
+        </div>
+    </div>
+
+    <!-- Scroll to top button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class='bx bx-up-arrow-alt'></i>
+    </button>
+
+    <footer class="footer" id="footer">
+        <div class="footer-content">
+            <div class="footer-name">
+                <h2>Manny Johnson @mmxxv</h2>
+                <p class="footer-tagline">Crafting digital experiences</p>
+            </div>
+            
+            <div class="footer-social">
+                <a href="https://github.com/manny-codeszn" target="_blank" class="social-link">
+                    <i class='bx bxl-github'></i>
+                </a>
+                <a href="https://x.com/manny_xszn" target="_blank" class="social-link">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Manny Johnson. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
