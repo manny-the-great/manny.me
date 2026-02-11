@@ -4,9 +4,9 @@
     --bg-primary: #0a0a0a;
     --bg-secondary: #121212;
     --bg-card: #1a1a1a;
-    --emerald: #10b981;
-    --emerald-dark: #059669;
-    --emerald-light: #34d399;
+    --emerald: #00ff0d;
+    --emerald-dark: #00ff22;
+    --emerald-light: #05eb09;
     --text-primary: #ffffff;
     --text-secondary: #9ca3af;
     --text-muted: #6b7280;
@@ -137,7 +137,7 @@ body {
     height: 280px;
     border-radius: 50%;
     overflow: hidden;
-    border: 4px solid var(--emerald);
+    border: 2px solid var(--emerald);
     box-shadow: 0 0 40px rgba(16, 185, 129, 0.3);
     transition: all 0.3s ease;
 }
@@ -158,8 +158,8 @@ body {
 }
 
 .name-label {
-    font-size: 14px;
-    letter-spacing: 8px;
+    font-size: 15px;
+    letter-spacing: 3px;
     color: var(--emerald);
     font-weight: 600;
     display: block;
@@ -167,11 +167,11 @@ body {
 }
 
 .hero-name {
-    font-size: 72px;
+    font-size: 40px;
     font-weight: 300;
     color: var(--text-secondary);
-    text-transform: lowercase;
-    letter-spacing: 2px;
+    text-transform: uppercase;
+    letter-spacing: none;
 }
 
 /* Hero Right */
@@ -251,19 +251,17 @@ body {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
-    opacity: 0.3;
 }
 
 .additional-tech-icons i {
-    font-size: 32px;
+    font-size: 40px;
     color: var(--text-secondary);
     transition: all 0.3s ease;
 }
 
 .additional-tech-icons i:hover {
     color: var(--emerald);
-    opacity: 1;
-    transform: scale(1.2);
+    transform: scale(1.5);
 }
 
 /* ========== SERVICES SECTION ========== */
@@ -281,8 +279,8 @@ body {
 }
 
 .services-title {
-    font-size: 48px;
-    font-weight: 300;
+    font-size: 42px;
+    font-weight: 400;
     color: var(--text-primary);
     margin-bottom: 60px;
 }
