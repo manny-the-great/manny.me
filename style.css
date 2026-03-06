@@ -440,9 +440,13 @@ ul {
     white-space: nowrap;
 }
 
-.brand-item i {
+.brand-item i,
+.brand-item svg {
     font-size: 22px;
+    width: 22px;
+    height: 22px;
     color: var(--text-gray);
+    fill: var(--text-gray);
 }
 
 .brand-item span {
@@ -798,6 +802,31 @@ ul {
     transition: var(--transition);
 }
 
+/* Brand Colors */
+#contact-gmail i {
+    color: #ff1500;
+}
+
+#contact-instagram i {
+    color: #E1306C;
+}
+
+#contact-whatsapp i {
+    color: #25D366;
+}
+
+#contact-x i {
+    color: #ffffff;
+}
+
+#contact-github i {
+    color: #ffffff;
+}
+
+#contact-behance i {
+    color: #1769ff;
+}
+
 .contact-card span {
     font-size: 12px;
     font-weight: 500;
@@ -813,7 +842,6 @@ ul {
 }
 
 .contact-card:hover i {
-    color: var(--accent);
     transform: scale(1.15);
 }
 
