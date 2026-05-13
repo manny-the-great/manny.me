@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #070707;
+  --color-foreground: #fafafa;
+  
+  --color-primary: #ff5f1f;
+  --color-primary-foreground: #fafafa;
+  --color-secondary: #ff6a00;
+  
+  --color-card: rgba(20, 20, 20, 0.4);
+  --color-card-hover: rgba(255, 255, 255, 0.05);
+  
+  --font-sans: var(--font-poppins), system-ui, sans-serif;
+  --font-heading: var(--font-bricolage), system-ui, sans-serif;
+  --font-mono: 'Share Tech Mono', monospace;
+  
+  --animate-pulse-glow: pulse-glow 4s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.75; }
+}
+
+@layer base {
+  :root {
+    --background: #070707;
+    --foreground: #fafafa;
+  }
+  .light {
+    --background: #fafafa;
+    --foreground: #070707;
+  }
+  body {
+    color: var(--foreground);
+    background-color: var(--background);
+    overflow-x: hidden;
+    transition: background-color 0.4s ease, color 0.4s ease;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer components {
+  .glass-card {
+    background-color: var(--color-card);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.05);
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+  }
+  .glass-card-hover:hover {
+    border-color: rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), 0 0 40px rgba(255, 95, 31, 0.06);
+    transform: translateY(-2px);
+  }
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--background); }
+::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.1); border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255, 95, 31, 0.4); }
